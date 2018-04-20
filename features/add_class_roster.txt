@@ -1,0 +1,7 @@
+Test was written for the add class roster feature with three scenarios. One of the scenarios is to make sure the user can
+select the appropirate class roster if they're on the creating activity page. The other is similar to the first, the only
+change is that the user is on the edit activity page, so they would be editing the class roster that is selected. 
+These are the happy paths; for the sad paths, it would be that there is no class roster to choose from which in that 
+case they will need to create one. 
+
+** THE SAD PATH MIGHT HAVE A DIFFERENT PLAN IN THE END** 

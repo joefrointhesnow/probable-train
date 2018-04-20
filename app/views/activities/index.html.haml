@@ -1,0 +1,19 @@
+-#  This file is app/views/activities/index.html.haml
+%h1 Select Activity
+
+%table#activities
+  %thead
+    %tr
+      %th Activity Title
+      %th Start Time
+      %th Duration
+      %th More Info
+  %tbody
+    - @activities.each do |activity|
+      %tr
+        %td= activity.title 
+        %td= activity.startTime
+        %td= activity.duration
+        %td= link_to "More about #{activity.title}", activity_path(activity)
+
+= link_to 'Add new activity', new_activity_path

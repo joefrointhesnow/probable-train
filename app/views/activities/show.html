@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <div style="width:100%; height:100%; text-align:center; margin-top: 2em"> 
+        <!-- <h1> <img src="https://preview.ibb.co/g1fqa7/Logo2.png" alt="Logo"> </h1> -->
+    </div>
+    
+    <div style="width:100%; height:100%; text-align:center; margin-top: 2em"> 
+        <h2>Details about <%= @activity.title %></h2>
+        <hr>
+    </div>
+      </head>
+
+  <body>
+    
+    <!-- Need to display activites from database here -->
+    <div class = "container">
+        <div class = "row">
+            <div class="activity">
+                <p>Duration <%= @activity.duration %></p>
+                <p>Start time <%= @activity.startTime %></p>
+                <p><h2>Description:</h2><%= @activity.description %></p>
+            </div> 
+            </div>
+    </div>
+<hr>
+
+<p>Current Code: </p> <p><%= @activity.activeCode %></p>
+
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Custom Code</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" placeholder="Enter new code" class="form-control input-md" type="text">
+    <button id="save" name="save" href="/activities/<%= @activity.id %>/savecode" class="btn btn-primary">Save Code</button>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="save"></label>
+  <div class="col-md-4">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="generate"></label>
+  <div class="col-md-4">
+    <!--<button id="generate" name="generate" href = "/activities/destroy/<%= @activity.id %>" class="btn btn-primary">Generate New Code</button>-->
+    <a class="btn btn-primary" name = "genCode" href="/activities/<%= @activity.id %>/generatecode" role="button">Gen New Code</a>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+<hr>
+
+
+
+<p>
+   <a class="btn btn-primary" href="<%= edit_activity_path(@activity) %>" role="button">Edit</a>
+</p>
+<p>
+    <a class="btn btn-primary" href="/activities/destroy/<%= @activity.id %>" role="button">Delete</a>
+</p>
+<p>
+   <a class="btn btn-primary" href="/activities/select_activity" role="button">Back to Activity Select</a>
+</p>
+<p>
+   <a class="btn btn-primary" href="/activities/earning_student" role="button">EARN CASH</a>
+</p>
+
+
+    
+
+  
+	      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	
+  </body>
+</html>

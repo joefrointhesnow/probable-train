@@ -1,0 +1,5 @@
+Test was written for the cash out feature with two scenarios. One of the scenarios is to make sure the user can
+click on the earn cash button and generate a confirmation number and also send an email to both themselves and 
+administrator. This would be the happy path. As for the sad path, the scenario is that the email is not sent
+which therefore the confirmation number is not generated. It will tell the user on the cash out page that the
+email was not sent. 

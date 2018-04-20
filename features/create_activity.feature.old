@@ -1,0 +1,28 @@
+Feature: Create Activity
+As a professor
+I want to be able to create activities
+So that I can assign and manage activities for a class
+ 
+Scenario: creating an activity for a student 
+  Given there is a link titled "Create Activity" 
+  When I click on the "Create Activity"
+  Then I should be on the Create Activity page
+  And I should see five fields to insert information
+
+Scenario: entering in the information of the activity
+  Given I am on the Create Acitivty page
+  When I insert the Activity Name
+  And insert Activity Start Time
+  And insert Activity End Time
+  And insert Class Roster
+  And insert Activity Location
+  And I click on the Create Activity button
+  Then I should see the activity on the Select Activity page 
+  
+Scenario: information for the acitvity is incomplete
+  Given I am on the Create Activity page
+  When not all of the fields are inserted
+  And I click on Create Activity Button
+  Then I will see a message that says not all fields are completed
+  
+  

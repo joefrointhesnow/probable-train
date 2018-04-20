@@ -1,0 +1,9 @@
+For this iteration, a test was written for Creating an Activity with two scenarios. The first is for filling in 
+all of the specified fields and submitting it (the happy path), and the final test was in case 
+if the user did not fill out all of the specified fields (the sad path). 
+
+I chose these by thinking about how the page should work in order to create the happy paths. As for 
+the sad path, I thought about how sometimes users do not fill out all of the information that needs
+to be provided. 
+
+-some portions removed from Olga's version

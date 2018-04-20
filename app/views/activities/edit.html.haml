@@ -1,0 +1,19 @@
+-# edit.html.haml using partial
+
+%h1 Edit Existing Activity
+
+= form_tag activity_path(@activity), :method => :put do
+
+  = label :activity, :title, 'Title'
+  = text_field :activity, 'title'
+  
+  = label :activity, :description, 'Description'
+  = text_field :activity, 'description'
+
+  = label :activity, :duration, 'Duration'
+  = select :activity, :duration, [60, 75, 120, 155]
+
+  = label :activity, :startTime, 'Start Time'
+  = datetime_select :activity, :startTime
+
+  = submit_tag 'Update Activity Info'

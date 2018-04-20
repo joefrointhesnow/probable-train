@@ -1,0 +1,4 @@
+Test was written for the remove activity feature with two scenarios. One of the scenarios is to make sure the user can
+select the activities they wish to remove and be able to delete them after clicking on the delete button. That is the happy path. 
+For the sad path, when the user selects the activities they wish to delete, the activities don't delete after clicking 
+on the button to delete.

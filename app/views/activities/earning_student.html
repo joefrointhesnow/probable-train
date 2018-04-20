@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+
+<div style="width:100%; height:100%; text-align:center; margin-top: 2em"> 
+    <!--<h1> <img src="https://preview.ibb.co/g1fqa7/Logo2.png" alt="Logo"> </h1> -->
+    
+</div>
+
+<div style="width:100%; height:100%; text-align:center; margin-top: 2em"> 
+    <h2>CURRENTLY EARNING POINTS</h2>
+</div>
+  </head>
+  <body>
+    
+  <div class="container">
+    <div class="page-header">
+    </div>
+    <div class="row grid-divider">
+    <div class="col-sm-4">
+      <div class="col-padding">
+        <h3>Column 1</h3>
+        <p><!-- need to decide how to seperate and how we want to do things on this page --> </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="col-padding">
+        <h3>Column 2</h3>
+        <p><!-- need to decide how to seperate and how we want to do things on this page --> </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="col-padding">
+        <h3>Total accumulated time</h3>
+        <p> <%= @tmp = /compensation: ([0-9]+)/.match(@current_user_data.inspect).captures %>  </p>
+        <p>   
+        <% if @tmp.to_s == '["500"]' %>
+            user at maximum compensation
+        <% end %>
+        </p>
+      </div>
+    </div>
+    </div>
+
+    <div style="width:100%; height:100%; text-align:center; margin-top: 15em"> 
+    
+    <a class="btn btn-primary" href="/activities/select_activity" role="button">SELECT DIFFERENT ACTIVITY</a>
+    
+   <div style="width:100%; height:100%; text-align:center; margin-top: 4em"> 
+      <a class="btn btn-primary" href="/activities/cash_out" role="button">CASH OUT</a>
+    </div>
+    
+    
+    </div>
+  
+	      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	
+  </body>
+</html>

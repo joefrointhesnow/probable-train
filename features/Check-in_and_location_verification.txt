@@ -1,0 +1,8 @@
+I wrote the feature, "Check-in and location verification".
+
+This feature tests the apps ability to verify if the user is at an activities 
+location, so they can begin to log hours as attended. 
+
+The happy path is when the user is at the activites location and they see the
+"location verified" icon. The sad path is when the user is not at that 
+activities location and the app gives them the "location not verified" icon.

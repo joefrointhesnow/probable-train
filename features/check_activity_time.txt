@@ -1,0 +1,5 @@
+Two tests were made for feature "check activity time"
+
+The first test is a happy test and checks that a user can see their accumulated time for an activity in the earnings page
+
+the second test is a sad test where the user has not accumulated points in an activity and should see no points in their earnings page

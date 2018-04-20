@@ -1,0 +1,8 @@
+these are tests for the user story "compensaition limit"
+
+I wrote 2 tests for this story.
+one is a happy path, in which a user sets compensaition to a value less than the compensation limit.
+in this case the app should set compensation to the value the user entered.
+
+one is a sad path in which the user sets compensation to a value greater than the compensation limit.
+in this case the app should set compensation to the compensation limit.

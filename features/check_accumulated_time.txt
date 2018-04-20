@@ -1,0 +1,8 @@
+I wrote tests for the feature "Check accumulated time"
+
+I wrote 3 tests for this story. 2 are happy paths where a student user is logged in.
+in this case, if the users compensaition is less than compensaition limit, than the user should see their accumulated time.
+if the users accumulated time is the compensation limit, than the user should see their accumulated time and a message that they are at max compensaition.
+
+1 test is a sad path in which an admin user is logged in.
+in this case the user should not see accumulated time.

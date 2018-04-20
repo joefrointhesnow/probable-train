@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <div style="width:100%; height:100%; text-align:center; margin-top: 2em"> 
+      <h2>CREATE ACTIVITY</h2>
+  </div>
+</head>
+  
+<body>
+  
+<hr>
+
+<%= form_for Activity.create do |form| %>
+
+  <p>
+    <%= form.label :title, "Title:" %>
+    <%= form.text_field :title %>
+  </p>
+  
+  <p>
+    <%= form.label :description, "Description:" %>
+    <%= form.text_field :description %>
+  </p>
+  
+  <p>
+  <%= label :activity, :duration, 'Duration' %>
+  <%= select :activity, :duration, [60, 75, 120, 155] %>
+  </p>
+  
+  <p>
+  <%= label :activity, :startTime, 'Start Time' %>
+  <%= datetime_select :activity, :startTime %>
+  </p>
+  
+  <div><button name = "commit" type="submit" value="submit" class="btn btn-primary">Submit</button></div>
+<% end %>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</body>
+</html>

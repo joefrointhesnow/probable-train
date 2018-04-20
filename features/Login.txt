@@ -1,0 +1,1 @@
+This test is designed to test successful login, and failed login due to both invalid usernames as well as invalid passwords. The failed login attempts are the sad paths while creating a new user or logging in successfully are both happy paths.

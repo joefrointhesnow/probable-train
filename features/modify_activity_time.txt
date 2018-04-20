@@ -1,0 +1,9 @@
+Two tests were made for the "Modify Activity Time" feature. 
+
+
+The first test takes an existing activity and modifies its time. 
+This is the happy test as the time successfully updates on the activity page.
+
+The second test takes an existing activity and attempts to modify its time using negative integers. 
+This is the sad test because activity times and durations cannot be negative integers, 
+so the activity time is not updated and the user is informed of this.

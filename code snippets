@@ -1,0 +1,5 @@
+runs rspec nd includes tests which pass
+rspec --format documentation
+
+runs flog, and shows all methods
+find app -name \*.rb | xargs flog -a
